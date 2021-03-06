@@ -1,0 +1,74 @@
+.app-wrapper {
+  .section-one,
+  .section-two {
+    padding: 80px 100px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      padding: 50px;
+    }
+
+    @media (max-width: 450px) {
+      padding: 50px 20px;
+    }
+  }
+
+  .section-one {
+    background: var(--white);
+
+    h4 {
+      font-weight: 100;
+      color: var(--primary);
+
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-weight: 100;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+      color: var(--primary);
+    }
+
+    .filter {
+      margin-left: 80%;
+      margin-top: -50px;
+    }
+
+    .filter-select {
+      width: 250px;
+      padding: 15px;
+      color: var(--black);
+      font-size: 1rem;
+      border-color: var(--secondary);
+      border-style: solid;
+    }
+  }
+
+  .section-two {
+    display: grid;
+    grid-template-columns: minmax(50px, 250px) minmax(50px, 250px) minmax(
+        50px,
+        250px
+      );
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+
+    @media (max-width: 1200px) {
+      gap: 50px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: minmax(50px, 250px) minmax(50px, 250px);
+    }
+  }
+}

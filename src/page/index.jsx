@@ -194,11 +194,6 @@ const Hero = () => {
               <h4>All Products</h4>
               <p>A 360&deg; look at Lumin</p>
 
-              <div className="custom-select filter">
-                <select name="" id="" className="filter-select">
-                  <option value="">Filter by</option>
-                </select>
-              </div>
             </section>
 
             <section className="section-two">
@@ -268,9 +263,7 @@ const Hero = () => {
                     <p>{currencyFormatter(subtotal, currency)}</p>
                   </div>
 
-                  <button disabled type="button" className="subscribe-discount">
-                    MAKE THIS A SUBSCRIPTION (SAVE 20%)
-                  </button>
+                  
                   <button disabled type="button" className="cart-proceed">
                     PROCEED TO CHECKOUT
                   </button>

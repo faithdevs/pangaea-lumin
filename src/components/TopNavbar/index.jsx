@@ -21,8 +21,7 @@ const TopNavbar = ({ totalItemInCart, handleCartModal }) => (
             I{Spacing(3)}
             N
           </a>
-          <a href={window.location.href} className="ml item">Shop</a>
-          <a href={window.location.href} className="item">Learn</a>
+          
         </li>
 
         <li key="2">
